@@ -162,11 +162,11 @@
         "topic": "git",
         "payload": "test git",
         "payloadType": "str",
-        "x": 160,
+        "x": 120,
         "y": 180,
         "wires": [
             [
-                "1a72c45fc21ec529"
+                "611f5ca7fba2531a"
             ]
         ]
     },
@@ -183,8 +183,48 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 370,
+        "x": 590,
         "y": 180,
         "wires": []
+    },
+    {
+        "id": "8b0427639ac8cc96",
+        "type": "catch",
+        "z": "1f3c7a7df54d0db0",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 400,
+        "y": 420,
+        "wires": [
+            [
+                "1a72c45fc21ec529"
+            ]
+        ]
+    },
+    {
+        "id": "611f5ca7fba2531a",
+        "type": "switch",
+        "z": "1f3c7a7df54d0db0",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 330,
+        "y": 200,
+        "wires": [
+            [
+                "1a72c45fc21ec529"
+            ]
+        ]
     }
 ]
