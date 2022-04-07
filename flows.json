@@ -142,34 +142,49 @@
         "className": ""
     },
     {
-        "id": "d695f2f45d9763ac",
-        "type": "serial in",
+        "id": "5d1d1ce17def975c",
+        "type": "inject",
         "z": "1f3c7a7df54d0db0",
         "name": "",
-        "serial": "96f22efec48eeea8",
-        "x": 150,
-        "y": 240,
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "git",
+        "payload": "test git",
+        "payloadType": "str",
+        "x": 160,
+        "y": 180,
         "wires": [
             [
-                "619e9f1c49b20e1f"
+                "1a72c45fc21ec529"
             ]
         ]
     },
     {
-        "id": "619e9f1c49b20e1f",
-        "type": "ui_text",
+        "id": "1a72c45fc21ec529",
+        "type": "debug",
         "z": "1f3c7a7df54d0db0",
-        "group": "61d0cc2d8d10c76a",
-        "order": 0,
-        "width": 0,
-        "height": 0,
         "name": "",
-        "label": "Read Switch",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "x": 430,
-        "y": 240,
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 180,
         "wires": []
     }
 ]
