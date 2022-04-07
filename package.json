@@ -1,0 +1,12 @@
+{
+    "name": "NODE_RED_TEST",
+    "description": "NODE_RED_TEST GIT FUNCTIONALITY",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flows.json",
+            "credentialsFile": "flows_cred.json"
+        }
+    }
+}
